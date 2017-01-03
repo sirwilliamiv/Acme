@@ -1,0 +1,93 @@
+{
+    "products": [
+        {
+            "fairy_sparklers": {
+                "id": 0,
+                "type": 0,
+                "name": "Fairy Sparklers",
+                "description": "Multi-colored sparklers that are safe for any age."
+            },
+            "spleen splitters": {
+                "id": 0,
+                "type": 0,
+                "name": "spleen splitters",
+                "description": "Uncle Bobby held the first one in his hand and split his spleen."
+            },
+            "whisker biscuits": {
+                "id": 0,
+                "type": 0,
+                "name": "Fairy Sparklers",
+                "description": "Flaky and buttery, but purr like a kitten's whiskers "
+            },
+            "honkey lighters": {
+                "id": 0,
+                "type": 0,
+                "name": "honkey lighters",
+                "description": "Imagine lighting a donkey on fire."
+            },"hoosker doos": {
+                "id": 0,
+                "type": 0,
+                "name": "hoosker doos",
+                "description": "Makes you do things."
+            },
+             "hoosker don'ts": {
+                "id": 0,
+                "type": 0,
+                "name": "hoosker don'ts",
+                "description": "Stops you from doing things."
+            },
+            "cherry bombs": {
+                "id": 0,
+                "type": 0,
+                "name": "cherry bombs",
+                "description": "Tasty little things, but don't put them in your drink."
+            },
+            "nipsy daisers": {
+                "id": 0,
+                "type": 0,
+                "name": "nipsy daisers",
+                "description": "I am the walrus -john lennon."
+            },
+            "scooter stick": {
+                "id": 0,
+                "type": 0,
+                "name": "scooter stick",
+                "description": "Add to any larger firework for a scooter of fun."
+            }," whistlin' kitty chaser": {
+                "id": 0,
+                "type": 0,
+                "name": "whistlin' kitty chaser",
+                "description": "Keep your cats away..."
+            },
+             "black cats": {
+                "id": 0,
+                "type": 0,
+                "name": "black cats",
+                "description": "Dark,dark visuals."
+            },
+            "screaming mimis": {
+                "id": 0,
+                "type": 0,
+                "name": "screaming mimis",
+                "description": "How to terrorize grandma."
+            },
+            " zippity do das": {
+                "id": 0,
+                "type": 0,
+                "name": "zippity do das",
+                "description": "Louis Armstrong's personal favorite."
+            },
+            "fuzz buttles": {
+                "id": 0,
+                "type": 0,
+                "name": "fuzz buttles",
+                "description": "Hairy battle tanks."
+            },"lady fingers": {
+                "id": 0,
+                "type": 0,
+                "name": "lady fingers",
+                "description": "You don't want these scratching your back."
+            }
+        }
+    ]
+}
