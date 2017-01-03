@@ -9,7 +9,9 @@
 // then load types.json,
 //  then products.json.
 
-
+var loadCategories;
+var loadType;
+var loadProducts
 
 
 var category1 = new Promise(function(resolve, reject){
@@ -48,6 +50,14 @@ var products3 = new Promise(function(resolve, reject){
   function(val){
     category1 = val
     console.log("promise one resolve, ", category1)
+    loadCategories =
+    `<div class="card col-md-3">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">line1</li>
+          <li class="list-group-item">hey</li>
+          <li class="list-group-item">line3</li>
+        </ul>
+    </div>`
     return types2
   }).then(
   function(val){
@@ -58,6 +68,7 @@ var products3 = new Promise(function(resolve, reject){
   function(val){
     products3 = val
     console.log("promise three resolve, ", products3)
+    $('#button').append(loadCategories)
   })
 
 
