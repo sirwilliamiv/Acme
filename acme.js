@@ -8,10 +8,14 @@
 // to load that array of objects,
 // then load types.json,
 //  then products.json.
-
-var loadCategories;
-var loadType;
-var loadProducts
+var category1;
+var types2;
+var products3;
+var loadFireworks;
+var loadDemolition;
+var category= "";
+var type ="";
+var prodduct="";
 
 // ===============================xhr request========================
 
@@ -53,10 +57,15 @@ var products3 = new Promise(function(resolve, reject){
 
  var fireworks = $('#fireworks').click( function(){
    console.log($('#fireworks').text() )
+   loadFireworks =
+   if()
+   $("#data").html(loadFireworks)
  })
 
   var demolition = $('#demolition').click( function(){
    console.log($('#demolition').text() )
+   console.log("load the dom with demolition")
+
  })
 
 
@@ -67,14 +76,6 @@ var products3 = new Promise(function(resolve, reject){
   function(val){
     category1 = val
     console.log("promise one resolve, ", category1)
-    // loadCategories =
-    // `<div class="card col-md-3">
-    //     <ul class="list-group list-group-flush">
-    //       <li class="list-group-item">line1</li>
-    //       <li class="list-group-item">hey</li>
-    //       <li class="list-group-item">line3</li>
-    //     </ul>
-    // </div>`
     return types2
   }).then(
   function(val){
@@ -85,13 +86,23 @@ var products3 = new Promise(function(resolve, reject){
   function(val){
     products3 = val
     console.log("promise three resolve, ", products3)
-    $('#button').append(loadCategories)
+    // $('#button').append(loadCategories)
   })
 
+
+// how do i associate this thing with that thing
 
 
 
 // function sendToTheDom(passtheValue)
+    // loadCategories =
+    // `<div class="card col-md-3">
+    //     <ul class="list-group list-group-flush">
+    //       <li class="list-group-item">line1</li>
+    //       <li class="list-group-item">hey</li>
+    //       <li class="list-group-item">line3</li>
+    //     </ul>
+    // </div>`
 // // Once all data is loaded, you need to display the products in
 //  a Bootstrap grid.
 //   Each product must display the string name of

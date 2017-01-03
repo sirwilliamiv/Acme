@@ -3,88 +3,91 @@
         {
             "fairy_sparklers": {
                 "id": 0,
-                "type": 0,
+                "type-id": 4,
                 "name": "Fairy Sparklers",
                 "description": "Multi-colored sparklers that are safe for any age."
             },
             "spleen splitters": {
-                "id": 0,
-                "type": 0,
+                "id": 1,
+                "type-id": 2,
                 "name": "spleen splitters",
                 "description": "Uncle Bobby held the first one in his hand and split his spleen."
             },
             "whisker biscuits": {
-                "id": 0,
-                "type": 0,
+                "id": 2,
+                "type-id": 2,
                 "name": "Fairy Sparklers",
                 "description": "Flaky and buttery, but purr like a kitten's whiskers "
             },
             "honkey lighters": {
-                "id": 0,
-                "type": 0,
+                "id": 3,
+                "type-id": 0,
                 "name": "honkey lighters",
                 "description": "Imagine lighting a donkey on fire."
-            },"hoosker doos": {
-                "id": 0,
-                "type": 0,
+            },
+            "hoosker doos": {
+                "id": 4,
+                "type-id": 0,
                 "name": "hoosker doos",
                 "description": "Makes you do things."
             },
              "hoosker don'ts": {
-                "id": 0,
-                "type": 0,
+                "id": 5,
+                "type-id": 1,
                 "name": "hoosker don'ts",
                 "description": "Stops you from doing things."
             },
             "cherry bombs": {
-                "id": 0,
-                "type": 0,
+                "id": 6,
+                "type-id": 0,
                 "name": "cherry bombs",
                 "description": "Tasty little things, but don't put them in your drink."
             },
             "nipsy daisers": {
-                "id": 0,
-                "type": 0,
+                "id": 7,
+                "type-id": 3,
                 "name": "nipsy daisers",
                 "description": "I am the walrus -john lennon."
             },
             "scooter stick": {
-                "id": 0,
-                "type": 0,
+                "id": 8,
+                "type-id": 0,
                 "name": "scooter stick",
                 "description": "Add to any larger firework for a scooter of fun."
-            }," whistlin' kitty chaser": {
-                "id": 0,
-                "type": 0,
+            },
+            " whistlin' kitty chaser": {
+                "id": 9,
+                "type-id": 5,
                 "name": "whistlin' kitty chaser",
                 "description": "Keep your cats away..."
             },
              "black cats": {
-                "id": 0,
-                "type": 0,
+                "id": 10,
+                "type-id": 5,
                 "name": "black cats",
                 "description": "Dark,dark visuals."
             },
             "screaming mimis": {
-                "id": 0,
-                "type": 0,
+                "id": 11,
+                "type-id": 2,
                 "name": "screaming mimis",
                 "description": "How to terrorize grandma."
             },
             " zippity do das": {
-                "id": 0,
-                "type": 0,
+                "id": 12,
+                "type-id": 3,
                 "name": "zippity do das",
                 "description": "Louis Armstrong's personal favorite."
             },
             "fuzz buttles": {
-                "id": 0,
-                "type": 0,
+                "id": 13,
+                "type-id": 1,
                 "name": "fuzz buttles",
                 "description": "Hairy battle tanks."
-            },"lady fingers": {
-                "id": 0,
-                "type": 0,
+            },
+            "lady fingers": {
+                "id": 14,
+                "type-id": 3,
                 "name": "lady fingers",
                 "description": "You don't want these scratching your back."
             }

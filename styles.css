@@ -1,12 +1,14 @@
 body {
-  background-color: lightgrey;
+ /* background-color: lightgrey;*/
+  background-image: url("this.png") ;
+  background-repeat: no-repeat;
 }
 
 .container {
+  padding: 3rem;
   border:solid 2px white;
   min-height: 720px;
-  background-image: url("fireworksStand.png");
-  background-repeat: no-repeat;
+
   /*text-align: center;*/
 }
 .btn-group {
