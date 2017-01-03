@@ -90,6 +90,24 @@
                 "type-id": 3,
                 "name": "lady fingers",
                 "description": "You don't want these scratching your back."
+            },
+             "chutes n ladders": {
+                "id": 15,
+                "type-id": 1,
+                "name": "chutes n ladders",
+                "description": "These shoot, but don't need a ladder."
+            },
+             "steam pops": {
+                "id": 16,
+                "type-id": 1,
+                "name": "steam pops",
+                "description": "steamy..."
+            },
+             "bottle rockets": {
+                "id": 17,
+                "type-id": 1,
+                "name": "bottle rockets",
+                "description": "Owen Wilson's acting debut."
             }
         }
     ]
