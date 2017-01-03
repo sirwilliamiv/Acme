@@ -13,6 +13,8 @@ var loadCategories;
 var loadType;
 var loadProducts
 
+// ===============================xhr request========================
+
 
 var category1 = new Promise(function(resolve, reject){
   var xml = new XMLHttpRequest();
@@ -45,19 +47,34 @@ var products3 = new Promise(function(resolve, reject){
 
 
 
+// =====================clicking a selection======================
+
+
+
+ var fireworks = $('#fireworks').click( function(){
+   console.log($('#fireworks').text() )
+ })
+
+  var demolition = $('#demolition').click( function(){
+   console.log($('#demolition').text() )
+ })
+
+
+ // ==========================promises================================
+
   category1
     .then(
   function(val){
     category1 = val
     console.log("promise one resolve, ", category1)
-    loadCategories =
-    `<div class="card col-md-3">
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">line1</li>
-          <li class="list-group-item">hey</li>
-          <li class="list-group-item">line3</li>
-        </ul>
-    </div>`
+    // loadCategories =
+    // `<div class="card col-md-3">
+    //     <ul class="list-group list-group-flush">
+    //       <li class="list-group-item">line1</li>
+    //       <li class="list-group-item">hey</li>
+    //       <li class="list-group-item">line3</li>
+    //     </ul>
+    // </div>`
     return types2
   }).then(
   function(val){
