@@ -8,14 +8,12 @@
 // to load that array of objects,
 // then load types.json,
 //  then products.json.
-var category1;
-var types2;
-var products3;
+// var category1;
+// var types2;
+// var products3;
 var loadFireworks;
 var loadDemolition;
-var category= "";
-var type ="";
-var prodduct="";
+
 
 // ===============================xhr request========================
 
@@ -51,24 +49,8 @@ var products3 = new Promise(function(resolve, reject){
 
 
 
-// =====================clicking a selection======================
-
-
-
- var fireworks = $('#fireworks').click( function(){
-   console.log($('#fireworks').text() )
-   loadFireworks =
-   if()
-   $("#data").html(loadFireworks)
- })
-
-  var demolition = $('#demolition').click( function(){
-   console.log($('#demolition').text() )
-   console.log("load the dom with demolition")
-
- })
-
-
+var theProductName;
+ var theTypeIdMatcher;
  // ==========================promises================================
 
   category1
@@ -80,17 +62,92 @@ var products3 = new Promise(function(resolve, reject){
   }).then(
   function(val){
     types2 = val
-    console.log("promise two resolve, ", types2)
+    console.log("promise two resolve, ", types2.types)
+  // for(var i = 0; i < types2.types.length; i ++) {
+  // }
     return products3
   }).then(
   function(val){
     products3 = val
+    for (var p in products3.products[0]) {
+      // console.log(p)
+      theProductName = p;
+      theTypeIdMatcher = products3.products[0][p].typeid;
+      $('#data').append(`<h1>${theProductName}</h1> <h3>type id: ${theTypeIdMatcher}</h3>`)
+
+}
     console.log("promise three resolve, ", products3)
     // $('#button').append(loadCategories)
   })
 
-
 // how do i associate this thing with that thing
+
+
+
+// =====================clicking a selection======================
+
+
+
+ // var fireworks = $('#fireworks').click( function(){
+ //   console.log($('#fireworks').text() )
+ //   loadFireworks +=
+ //   if()
+ //   $("#data").html(loadFireworks)
+ // })
+
+ //  var demolition = $('#demolition').click( function(){
+ //   console.log($('#demolition').text() )
+ //   console.log("load the dom with demolition")
+
+ // })
+
+
+  // =========================loop to find products=======================================
+
+
+// // var category;
+// // var type;  -=--> types2.types[3].id  to match category
+// // use switch statement
+// // switch(types2.types[3].id){
+// //
+// function letMeMatchTheType(productid) {
+//   switch (productid) {
+//     case 0:
+
+
+// //   case -1:
+// //     console.log('negative 1');
+// //     break;
+//     }
+// //   case 0: // foo is 0 so criteria met here so this block will run
+// //     console.log(0);
+// // //  case 0
+// // //  case1
+// // //  case2
+// // //  case3
+// // //  case4
+// // //  case5
+// // //  case6
+// // //  }
+// // // var product; ---> search products
+// // var usingProducts;
+
+// console.log(types2.types)
+for (var p in types2.types) {
+    // for var k in
+  console.log("please be the products", p)
+  // if (products3[i].)
+  //   use filter to return values and assign values to type
+}
+
+// for(var i = 0; i < products3.length; i++){
+//   if (types[i].)
+//     use filter to return values and assign values to type
+// }
+
+
+
+
 
 
 
