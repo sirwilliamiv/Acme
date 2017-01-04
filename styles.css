@@ -5,6 +5,8 @@ body {
 }
 
 .container {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
   padding: 3rem;
   border:solid 2px white;
   min-height: 720px;
