@@ -1,0 +1,40 @@
+{
+    "types": [
+        {
+            "id": 0,
+            "categoryid": 0,
+            "name": "SmallTime",
+            "description": "Fireworks intended for recreational use during holiday celebrations"
+        },
+        {
+            "id": 1,
+            "categoryid": 1,
+            "name": "commercial",
+            "description": "Fireworks intended for commercial use during your every day demolition needs"
+        },
+        {
+            "id": 2,
+            "categoryid": 1,
+            "name": "illegal",
+            "description": "Fireworks intended for unconventional use, usually banned by local municipalities"
+        },
+        {
+            "id": 3,
+            "categoryid": 0,
+            "name": "HighPerformance",
+            "description": "Large Mortared Fireworks intended for recreational use during holiday celebrations"
+        },
+        {
+            "id": 4,
+            "categoryid": 0,
+            "name": "Sparklers",
+            "description": "Fireworks intended for children under adult supervision"
+        },
+        {
+            "id": 5,
+            "categoryid": 1,
+            "name": "H1",
+            "description": "Hydrogen Bomb"
+        }
+    ]
+}
