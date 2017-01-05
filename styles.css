@@ -2,6 +2,7 @@ body {
  /* background-color: lightgrey;*/
   background-image: url("this.png") ;
   background-repeat: no-repeat;
+
 }
 
 .container {
@@ -9,7 +10,8 @@ body {
   margin-bottom: 5rem;
   padding: 3rem;
   border:solid 2px white;
-  min-height: 720px;
+  min-height: 100%;
+  color: white;
 
   /*text-align: center;*/
 }
@@ -25,4 +27,12 @@ body {
 
 a {
   display: block;
+}
+#data {
+
+  font-size: 2.5rem;
+  list-style: none;
+}
+.fireworks {
+  text-align: center;
 }

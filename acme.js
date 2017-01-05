@@ -51,9 +51,16 @@ var products3 = new Promise(function(resolve, reject){
 
 var theProductName;
 var theTypeIdMatcher;
-var theCategoryMatcher;
+
+
+var theTypeId =[];
+var theCategoryId;
  // ==========================promises================================
-function fireTheFireworks() {
+
+
+
+
+function fireTheFireworks(numberId) {
 
 
   category1
@@ -61,42 +68,64 @@ function fireTheFireworks() {
   function(val){
     category1 = val
     console.log("promise one resolve, ", category1)
-    return types2
+
+
+  return types2
   }).then(
   function(val){
     types2 = val
-    console.log("promise two resolve, ", types2.types)
-    for (var t in types2.types){
-        console.log( types2.types[t].categoryid)
+    // console.log("promise two resolve, ", types2.types)
 
-      // console.log(t)
-      // theCategoryMatcher = types2.types[i];
-      // console.log(theCategoryMatcher)
+//loop thru types
+    for (var t in types2.types){
+      if (numberId === types2.types[t].categoryid) {
+        //sending types to array:theTypeid[] --->using this to compare product typeid in next promise
+        theTypeId.push(types2.types[t].id)
+      }
+
     }
     return products3
   }).then(
   function(val){
     products3 = val
+//looping thru products
     for (var p in products3.products[0]) {
+
+//checking if types array includes the same id as the product
+      if(theTypeId.includes(products3.products[0][p].typeid)){
+         theProductName = p;
+         theTypeIdMatcher = products3.products[0][p].typeid;
+
+        $('#data').append(`<li class="fireworks col-md-12">${theProductName}</li>`)
+      }
 
 //saving data
       theProductName = p;
       theTypeIdMatcher = products3.products[0][p].typeid;
 
-      // console.log(theCategoryMatcher)
-// if(theTypeIdMatcher === 0)
       //send data to DOM
-      $('#data').append(`<div class="fireworks col-md-3">${theProductName}</div> <divclass="fireworks">type id: ${theTypeIdMatcher}</div>`)
 
-}
-    console.log("promise three resolve, ", products3)
-    // $('#button').append(loadCategories)
+        whatIsTheCatAndTypeId(theCategoryId, theTypeId)
+  } //-->end for loop
+
   })
 
+}   //---> end fireTheFireworks
+
+
+//if type cat id = 0 then print all products with this type id
+function whatIsTheCatAndTypeId(category, type) {
+  if(category === type) {
+    console.log(type)
+
+    // print products which have type id === type
+    }
 }
+// one that compares catid with typeid
 
-// how do i associate this thing with that thing
 
+
+// typeid with product typeid
 
 
 // =====================clicking a selection======================
@@ -104,10 +133,10 @@ function fireTheFireworks() {
 
 
  $('#fireworks').click( function(){
-        fireTheFireworks()
+        fireTheFireworks(0)
  })
 
 
  $('#demolition').click( function(){
-        fireTheFireworks()
+        fireTheFireworks(1)
   })
