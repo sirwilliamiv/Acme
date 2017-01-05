@@ -130,13 +130,17 @@ function whatIsTheCatAndTypeId(category, type) {
 
 // =====================clicking a selection======================
 
+var strOfFire = $('#fireworks').text()
+var strOfDemo = $('#demolition').text()
 
 
  $('#fireworks').click( function(){
+        $('#which').text(strOfFire)
         fireTheFireworks(0)
  })
 
 
  $('#demolition').click( function(){
+        $('#which').text(strOfDemo)
         fireTheFireworks(1)
   })
