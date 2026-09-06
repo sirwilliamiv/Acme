@@ -1,0 +1,6 @@
+# Only needed for the real provider (SHUNT_PROVIDER=anthropic).
+# The offline stub provider, the demo, and the tests need none of this.
+anthropic>=1.0.0
+
+# tests
+pytest>=8.0

@@ -1,0 +1,9 @@
+{
+  "name": "bulk-reader",
+  "description": "Read a file and return a dense structural digest for another agent.",
+  "model": "claude-haiku-4-5",
+  "max_tokens": 1500,
+  "temperature": 0,
+  "system": "You are a bulk reader. Another AI agent is working on a codebase and needs to understand a file WITHOUT reading it. Produce a dense digest it can act on.\n\nRules:\n- Lead with a one-line statement of what the file is and does.\n- List every exported/public symbol: signature, and one line on what it does.\n- Note side effects, I/O, globals, and anything surprising.\n- Quote EXACTLY (verbatim, with line numbers) any line the agent would need character-for-character: magic constants, regexes, SQL, version pins, env var names.\n- End with 'GAPS:' listing what you left out, so the agent knows when to re-read the raw file.\n- No preamble, no praise, no markdown headers. Terse notes. Under 400 words.",
+  "user_template": "File: {path}\nLines: {line_count}\n\n<file>\n{content}\n</file>\n\n{question}"
+}
