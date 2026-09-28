@@ -2,54 +2,91 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Kicking Wing</title>
-
-  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Acme Home Ergonomics</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-<div class="container">
-
-<!-- Example single danger button -->
-<div id="button" class="col-md-5">
-    <div class="btn-group">
-    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Inventory
-    </button>
-    <div class="dropdown-menu">
-      <a id="fireworks" class="dropdown-item" href="#">Fireworks</a>
-      <a id="demolition" class="dropdown-item" href="#">Demolition</a>
-      </div>
+<header class="top">
+  <div class="wrap">
+    <h1>Acme Home Ergonomics</h1>
+    <p class="lede">Ergonomic support for remote employees: a qualified assessor visits the home in person or by video, then the employee orders the recommended equipment within the stipend HR sets.</p>
+    <nav id="tabs">
+      <button data-tab="program" class="active">1. Program</button>
+      <button data-tab="pros">2. Find a professional</button>
+      <button data-tab="assess">3. Assessment findings</button>
+      <button data-tab="shop">4. Marketplace <span id="cart-count" class="pill">0</span></button>
+    </nav>
   </div>
-</div>
+</header>
 
-<h1>Kicking Wing</h1>
-<h2 id="which"></h2>
+<main class="wrap">
 
-<ul id="data"></ul>
+  <section id="program" class="tab active">
+    <h2>How the program works</h2>
+    <ol class="steps">
+      <li><strong>HR sets a stipend</strong> for each remote employee's home setup.</li>
+      <li><strong>A qualified professional assesses the workstation</strong>, either in the home or over video.</li>
+      <li><strong>The assessor records findings</strong>, such as neck strain or wrist pain.</li>
+      <li><strong>The employee orders</strong> the equipment matched to those findings, within budget.</li>
+      <li><strong>A follow-up check at 30 days</strong> confirms the fix worked.</li>
+    </ol>
+    <label class="field">Stipend per employee (USD)
+      <input id="budget" type="number" min="0" step="50" value="750">
+    </label>
+    <h3>Who qualifies to assess</h3>
+    <div id="credentials" class="grid"></div>
+  </section>
 
+  <section id="pros" class="tab">
+    <h2>Qualified assessment providers</h2>
+    <div class="filters">
+      <label>Visit type
+        <select id="f-mode">
+          <option value="">Any</option>
+          <option value="in-home">In-home</option>
+          <option value="virtual">Virtual</option>
+        </select>
+      </label>
+      <label>Credential
+        <select id="f-cred"><option value="">Any</option></select>
+      </label>
+    </div>
+    <div id="providers" class="grid"></div>
+    <h3>Find an individual credentialed professional near an employee</h3>
+    <ul id="directories" class="links"></ul>
+    <p class="muted">Service details are summarized from each provider's own website. Confirm coverage, credentials and pricing before signing a contract.</p>
+  </section>
 
-<!--   <div class="dropdown">
-    <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Kicking Wing Selections
-        <span class="caret"></span>
-    </button>
-      <ul class="dropdown-menu" aria-labelledby="dLabel">
-        <li id="fireworks">Fireworks</li>
-        <li id="demolistion">Demolition</li>
-       </ul>
+  <section id="assess" class="tab">
+    <h2>Assessment findings</h2>
+    <p>The assessor, or the employee as a self-screen, checks everything that applies. Matching products are flagged in the marketplace.</p>
+    <div id="findings" class="checks"></div>
+    <button id="to-shop" class="primary">See recommended equipment →</button>
+  </section>
 
+  <section id="shop" class="tab">
+    <h2>Marketplace</h2>
+    <div class="filters">
+      <label><input id="only-rec" type="checkbox"> Show recommended only</label>
+      <button id="add-rec">Add all recommended to cart</button>
+    </div>
+    <div class="shop-layout">
+      <div id="products"></div>
+      <aside id="cart">
+        <h3>Cart</h3>
+        <ul id="cart-items"></ul>
+        <div id="budget-meter"><div id="budget-bar"></div></div>
+        <p id="cart-total"></p>
+        <button id="submit" class="primary">Submit for HR approval</button>
+        <pre id="order" hidden></pre>
+      </aside>
+    </div>
+  </section>
 
-  </div> -->
+</main>
 
-</div> <!-- endcontainer -->
-
-
-
-
-
-  <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
-  <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-   <script type="text/javascript" src="acme.js"></script>
+<script type="text/javascript" src="data.js"></script>
+<script type="text/javascript" src="acme.js"></script>
 </body>
 </html>
